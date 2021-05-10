@@ -20,6 +20,12 @@ const Login = () => {
                     <h1>Welcome To LinkedIn Clone</h1>
                     <img src="/images/login-hero.svg" alt="linkedin-clone" />
                 </Hero>
+                <Form>
+                    <Google>
+                        <img src="/images/google.svg" alt="" />
+                        Sign in with Google
+                    </Google>
+                </Form>
             </Section>
         </Container>
     )
@@ -124,7 +130,6 @@ const Hero = styled.div`
     }
 
     img{
-        z-index: -1;
         width: 700px;
         height: 670px;
         position: absolute;
@@ -136,6 +141,40 @@ const Hero = styled.div`
             height: initial;
             position: initial;
         }
+    }
+
+`;
+
+const Form = styled.div`
+    margin-top: 100px;
+    width: 400px;
+    @media(max-width: 760px){
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+`;
+
+const Google = styled.button`
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: inset 0 0 0 1px rgb(0 0 0 / 60%),
+    inset 0 0 0 2px rgb(0 0 0 / 0%) inset 0 0 0 1px rgb(0 0 0 / 0);
+    vertical-align: middle;
+    transition-duration: 167ms;
+    font-size: 20px;
+    color: rgba(0,0,0,.6);
+    cursor: pointer;
+
+    &:hover{
+        transition-duration: 167ms;
+        background-color: rgba(297,297,297,.25);
+        color: rgba(0,0,0,.75);
     }
 
 `;
