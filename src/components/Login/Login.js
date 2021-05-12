@@ -112,7 +112,7 @@ const Section = styled.section`
     }
 `;
 
-const Hero = styled.div`
+const Hero = styled.main`
     width: 100%;
     h1{
         padding-bottom: 0;
