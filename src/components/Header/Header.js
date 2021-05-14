@@ -96,7 +96,8 @@ const Container = styled.div`
 const Content = styled.div`
   display: flex;
   align-items: center;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   min-height: 100%;
   max-width: 1128px;
 `;
